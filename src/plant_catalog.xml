@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CATALOG>
-  <PLANT>
+  <PLANT id="1">
     <COMMON>Bloodroot</COMMON>
     <BOTANICAL>Sanguinaria canadensis</BOTANICAL>
     <ZONE>4</ZONE>
@@ -8,7 +8,7 @@
     <PRICE>$2.44</PRICE>
     <AVAILABILITY>031599</AVAILABILITY>
   </PLANT>
-  <PLANT>
+  <PLANT id="1">
     <COMMON>Columbine</COMMON>
     <BOTANICAL>Aquilegia canadensis</BOTANICAL>
     <ZONE>3</ZONE>
@@ -16,7 +16,7 @@
     <PRICE>$9.37</PRICE>
     <AVAILABILITY>030699</AVAILABILITY>
   </PLANT>
-  <PLANT>
+  <PLANT id="2">
     <COMMON>Marsh Marigold</COMMON>
     <!--<BOTANICAL>Caltha palustris</BOTANICAL>-->
     <ZONE>4</ZONE>
@@ -24,7 +24,7 @@
     <PRICE>$6.81</PRICE>
     <AVAILABILITY>051799</AVAILABILITY>
   </PLANT>
-  <PLANT>
+  <PLANT id="2">
     <COMMON>Cowslip</COMMON>
     <BOTANICAL>Caltha palustris</BOTANICAL>
     <ZONE>4</ZONE>
@@ -32,7 +32,7 @@
     <PRICE>$9.90</PRICE>
     <AVAILABILITY>030699</AVAILABILITY>
   </PLANT>
-  <PLANT>
+  <PLANT id="3">
     <COMMON>Dutchman's-Breeches</COMMON>
     <BOTANICAL>Dicentra cucullaria</BOTANICAL>
     <ZONE>3</ZONE>
