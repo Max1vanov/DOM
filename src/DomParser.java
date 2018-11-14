@@ -15,10 +15,13 @@ public class DomParser {
         String[] st = new String[]{"COMMON","BOTANICAL","AVAILABILITY"};
 
         SaveCotologs.testTags(document, "PLANT", st);
+        SaveCotologs.testTags(document, "PLANT", st);
         System.out.println("\nParse\n");
         SaveCotologs.createCatalogsList(document,"PLANT", st);
         System.out.println("\nPrint\n");
         ElementPars.printTagTextContent(document, "PLANT", st);
+        System.out.println("\n\n\n");
+        ElementPars.printTagTextContent(document, "PLANT", "id", "2",st);
 
         /*Element e1 = document.getDocumentElement(); //root
         System.out.println(e1.getNodeName());
