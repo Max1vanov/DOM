@@ -1,23 +1,29 @@
 # Java DOM
+![DOM](https://cdn2.howtodoinjava.com/wp-content/uploads/2014/07/dom.gif)
 
 STEPS:
 1. imports
-
-  org.w3c.dom.*;
-  
+```java
+  org.w3c.dom.*;  
   javax.xml.parsers.*;
-  
-2. DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+```
 
-3. DocumentBuilder builder = factory.newDocumentBuilder();
+2. ```java DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();```
 
-4. Document document = builder.parse(new File("path to the faile XML"));
+3. ```java DocumentBuilder builder = factory.newDocumentBuilder();```
 
+4. ```java Document document = builder.parse(new File("path to the faile XML"));```
+
+4.1 Normalize the XML Structure
+
+   ```java document.getDocumentElement().normalize();```
+   
 Next:
 
-5. Element root = document.getDocumentElement();//root
+5. ```java Element root = document.getDocumentElement();//root```
 
 6. Parsing for specified tags that are in the parent tag
+```java
 
   NodeList parent = document.getElementsByTagName(parentTag);//создаем список узлов по указанному тегу
   
@@ -41,7 +47,7 @@ Next:
           }
       }           
   }
-  
+```  
 7. Tag attribure chacking
   if(node.getAttribute(attr).equals(valueAttr)) {
   
@@ -49,4 +55,25 @@ Next:
      
   }
  
+8. Validate
+```java
+  Schema schema = null;
+  
+  try {
+    String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
+    
+    SchemaFactory factory = SchemaFactory.newInstance(language);
+    
+    schema = factory.newSchema(new File(name));
+    
+  } catch (Exception e) {
+  
+    e.printStackStrace();
+    
+  }
+  
+  Validator validator = schema.newValidator();
+  
+  validator.validate(new DOMSource(document));
+```
 
