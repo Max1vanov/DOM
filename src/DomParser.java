@@ -4,7 +4,7 @@ import javax.xml.parsers.*;
 import java.io.IOException;
 
 public class DomParser {
-    //XML file path.
+    //path to the file XML.
     private static final String FILE_NAME = ".\\src\\plant_catalog.xml";
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
