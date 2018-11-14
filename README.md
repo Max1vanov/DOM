@@ -2,8 +2,10 @@
 
 STEPS:
 1. imports
-  org.w3c.dom.*
-  javax.xml.parsers.*
+
+  org.w3c.dom.*;
+  
+  javax.xml.parsers.*;
   
 2. DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
