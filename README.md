@@ -49,12 +49,13 @@ Next:
   }
 ```  
 7. Tag attribure chacking
+```java
   if(node.getAttribute(attr).equals(valueAttr)) {
   
      //do somthing
      
   }
- 
+ ```
 8. Validate
 ```java
   Schema schema = null;
