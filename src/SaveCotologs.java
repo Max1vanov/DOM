@@ -15,11 +15,11 @@ public class SaveCotologs {
         NodeList parent = document.getElementsByTagName(parentTag);
         for (int i = 0; i < parent.getLength(); i++) {
             Element node = (Element) parent.item(i);
-            NodeList childs = node.getChildNodes();
+            NodeList children = node.getChildNodes();
             Catalog catalog = new Catalog();
-            for (int j = 0; j < childs.getLength(); j++) {
-                if (childs.item(j).getNodeType() == Node.ELEMENT_NODE) {
-                    Element childNode = (Element) childs.item(j);
+            for (int j = 0; j < children.getLength(); j++) {
+                if (children.item(j).getNodeType() == Node.ELEMENT_NODE) {
+                    Element childNode = (Element) children.item(j);
                     for (int k = 0; k < tags.length; k++) {
                         if (tags[k].equals(childNode.getTagName())) {
                             switch (childNode.getTagName()) {

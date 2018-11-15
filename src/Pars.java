@@ -10,6 +10,7 @@ public class Pars {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(new File(faile));
+        //document.getDocumentElement().normalize();//normalize the XML structure
         return document;
     }
 }
