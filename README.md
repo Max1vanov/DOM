@@ -8,23 +8,35 @@ STEPS:
   javax.xml.parsers.*;
 ```
 
-2. ```java DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();```
+2. 
+```java 
+DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+```
 
-3. ```java DocumentBuilder builder = factory.newDocumentBuilder();```
+3. 
+```java 
+DocumentBuilder builder = factory.newDocumentBuilder();
+```
 
-4. ```java Document document = builder.parse(new File("path to the faile XML"));```
+4. 
+```java 
+Document document = builder.parse(new File("path to the faile XML"));
+```
 
 4.1 Normalize the XML Structure
-
-   ```java document.getDocumentElement().normalize();```
+  ```java 
+   document.getDocumentElement().normalize();
+   ```
    
 Next:
 
-5. ```java Element root = document.getDocumentElement();//root```
+5. 
+```java 
+Element root = document.getDocumentElement();//root 
+```
 
 6. Parsing for specified tags that are in the parent tag
 ```java
-
   NodeList parent = document.getElementsByTagName(parentTag);//создаем список узлов по указанному тегу
   
   for (int i = 0; i < parent.getLength(); i++) {
